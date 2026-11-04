@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f4f0; color: #202c28; font-family: system-ui, sans-serif; }
+main { max-width: 1440px; margin: auto; padding: 40px 28px; }
+header, .section-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+h1 { font-size: 34px; letter-spacing: -1px; margin: 8px 0; } h2 { font-size: 18px; }
+p { line-height: 1.7; } .eyebrow { font-size: 11px; letter-spacing: 2px; font-weight: 700; color: #507164; }
+.badge { background: #dce9da; color: #32513c; border-radius: 30px; padding: 10px 16px; font-size: 12px; white-space: nowrap; }
+.banner { padding: 14px 18px; background: #fff3d8; border-radius: 12px; font-size: 13px; margin: 28px 0; }
+.layout { display: grid; grid-template-columns: 1fr 1.5fr 1fr; gap: 18px; align-items: start; }
+.panel { background: white; border: 1px solid #e0e5dc; border-radius: 18px; padding: 22px; min-width: 0; }
+label { display: block; font-size: 13px; font-weight: 600; margin: 16px 0; }
+input, textarea { display: block; width: 100%; margin-top: 8px; padding: 11px; border: 1px solid #ced8ce; border-radius: 8px; font: inherit; line-height: 1.6; background: #fcfdfa; color: inherit; }
+textarea { resize: vertical; } button { border: 0; border-radius: 8px; padding: 10px 15px; background: #294e3e; color: white; cursor: pointer; font: inherit; font-size: 13px; }
+button:disabled { opacity: .45; cursor: default; } .secondary { background: #edf1e9; color: #365344; } .muted { color: #738074; font-size: 12px; font-weight: 400; }
+.messages { height: 440px; overflow-y: auto; padding: 8px 0; } .message { border-radius: 12px; background: #f0f4ec; padding: 12px 14px; margin: 12px 14px 12px 0; overflow-wrap: anywhere; }
+.message.user { background: #e4eee7; margin: 12px 0 12px 20px; } .message small { color: #617564; font-size: 11px; } .message p { margin: 6px 0 0; font-size: 14px; white-space: pre-wrap; }
+.composer { border-top: 1px solid #e6ebe1; } .memory-list { list-style: none; padding: 0; max-height: 340px; overflow-y: auto; } .memory-list li { border-top: 1px solid #e6ebe1; padding: 12px 0; overflow-wrap: anywhere; font-size: 13px; }
+.error { background: #ffe5df; color: #852f28; padding: 16px; border-radius: 8px; } footer { color: #788478; font-size: 12px; margin-top: 24px; }
+:focus-visible { outline: 3px solid #b2ccae; outline-offset: 2px; }
+@media (max-width: 1100px) { .layout { grid-template-columns: 1fr 1.5fr; } }
+@media (max-width: 700px) { .layout { grid-template-columns: 1fr; } header { align-items: flex-start; flex-direction: column; } main { padding: 24px 16px; } }

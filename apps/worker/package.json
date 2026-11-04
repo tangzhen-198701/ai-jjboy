@@ -1,0 +1,14 @@
+{
+  "name": "@ai-douyin/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@ai-douyin/shared": "workspace:*"
+  }
+}
